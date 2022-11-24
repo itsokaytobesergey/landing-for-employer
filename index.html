@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./countdown.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- главный компонент страницы -->
+    <main class="container">
+      <video id="background-video" autoplay loop muted poster="img/poster.png">
+        <source src="/img/Ink - 58193.mp4" type="video/mp4" />
+      </video>
+      <div class="hero">
+        <h1 class="hero__title">LevelUp</h1>
+        <img class="hero__img" src="img/prod.png" alt="product" />
+        <div class="hero__props">
+          <ul>
+            <li>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring</li>
+            <li>
+              I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I
+              neglect my talents
+            </li>
+            <li>The bedding was hardly able to cover it and seemed ready to slide off any moment.</li>
+          </ul>
+        </div>
+        <a class="hero__button button-form" href="#form">order</a>
+      </div>
+    </main>
+
+    <!-- состав -->
+    <section class="container compound">
+      <h2 class="section__title">About</h2>
+      <div class="compound__columns column__left">
+        <div class="columns__item">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>The quick, brown fox jumps over a lazy dog</p>
+        </div>
+        <div class="columns__item">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>Two driven jocks help fax my big quiz</p>
+        </div>
+        <div class="columns__item">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>A very bad quack might jinx zippy fowls</p>
+        </div>
+      </div>
+      <img class="compound__img" src="img/prod.png" alt="product" />
+      <div class="compound__columns column__right">
+        <div class="columns__item columns__item--right">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>The quick, brown fox jumps over a lazy dog</p>
+        </div>
+        <div class="columns__item columns__item--right">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>Two driven jocks help fax my big quiz</p>
+        </div>
+        <div class="columns__item columns__item--right">
+          <img class="compound__img--item" src="img/compound_img.png" alt="product" />
+          <p>A very bad quack might jinx zippy fowls</p>
+        </div>
+      </div>
+      <a class="compound__button button-form" href="#form">order</a>
+    </section>
+
+    <!-- слайдер -->
+    <section class="slider">
+      <h2 class="section__title">Review</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="slider__pic" src="img/profilepic.png" alt="фото человека" />
+            <h2 class="slider__name">Peter G.</h2>
+            <p class="slider__text">
+              A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img class="slider__pic" src="img/profilepic.png" alt="фото человека" />
+            <h2 class="slider__name">Peter G.</h2>
+            <p class="slider__text">
+              A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img class="slider__pic" src="img/profilepic.png" alt="фото человека" />
+            <h2 class="slider__name">Peter G.</h2>
+            <p class="slider__text">
+              A wizard’s job is to vex chumps quickly in fog. Watch "Jeopardy!", Alex Trebek's fun TV quiz game.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- промо блок -->
+    <section class="container">
+      <div class="promo">
+        <img class="promo-img" src="img/doctor.png" alt="изображение человека" />
+        <div class="promo__column">
+          <p class="promo__text">
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
+            belly
+          </p>
+          <ul class="bottom__list">
+            <li>Safe</li>
+            <li>Non-tested on animals</li>
+            <li>100% Natural</li>
+          </ul>
+          <a class="promo__button button-form" href="#form">order</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- форма заказа -->
+    <section class="container form-order">
+      <div class="form__leftColumn">
+        <h2 class="form__title">LevelUp</h2>
+        <img class="product__img" src="img/prod.png" alt="product" />
+      </div>
+      <div class="form__rightColumn">
+        <!-- TIMER -->
+        <section class="countdown-container">
+          <div class="minutes-container">
+            <div class="minutes"></div>
+          </div>
+          <!-- Почему так часто пропадаешь? -->
+          <span>:</span>
+          <!-- Почему так часто пропадаешь? -->
+          <div class="seconds-container">
+            <div class="seconds"></div>
+          </div>
+        </section>
+
+        <div class="product__price">
+          <span class="price__old">100$</span>
+          <svg width="143" height="145" viewBox="0 0 143 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M133.208 41.78C88.7994 60.5902 46.0332 83.9554 2 103.783"
+              stroke="#A56CDC"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M140.057 102.248C97.022 80.4772 51.5691 62.9013 7.99997 42.0739"
+              stroke="#A56CDC"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span class="price__new price__new--invisible">66$</span>
+          <span class="price__new">66$</span>
+        </div>
+        <form id="form">
+          <div>
+            <label for="Name">Name</label>
+            <input placeholder="Name" id="Name" type="text" />
+            <span class="form__placeholder">Stephan Papadopulus</span>
+          </div>
+          <div>
+            <label for="Tel">Phone</label>
+            <input placeholder="Phone number" id="Tel" type="number" />
+            <span class="form__placeholder">+377765420023</span>
+          </div>
+          <a class="form__button button-form" href="#form">order</a>
+        </form>
+      </div>
+    </section>
+
+    <!-- Cкрипты на слайдер и таймер -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        grabCursor: true,
+        slidesPerView: 3,
+        spaceBetween: 26,
+      })
+    </script>
+    <script>
+      const countDownClock = (number = 100, format = "seconds") => {
+        const d = document
+        const minutesElement = d.querySelector(".minutes")
+        const secondsElement = d.querySelector(".seconds")
+        let countdown
+        convertFormat(format)
+        function convertFormat(format) {
+          switch (format) {
+            case "seconds":
+              return timer(number)
+            case "minutes":
+              return timer(number * 60)
+            case "hours":
+              return timer(number * 60 * 60)
+            case "days":
+              return timer(number * 60 * 60 * 24)
+          }
+        }
+        function timer(seconds) {
+          const now = Date.now()
+          const then = now + seconds * 1000
+          countdown = setInterval(() => {
+            const secondsLeft = Math.round((then - Date.now()) / 1000)
+            if (secondsLeft <= 0) {
+              clearInterval(countdown)
+              return
+            }
+            displayTimeLeft(secondsLeft)
+          }, 1000)
+        }
+        function displayTimeLeft(seconds) {
+          minutesElement.textContent = Math.floor(((seconds % 86400) % 3600) / 60)
+          secondsElement.textContent = seconds % 60 < 10 ? `0${seconds % 60}` : seconds % 60
+        }
+      }
+      countDownClock(30, "minutes")
+    </script>
+  </body>
+</html>
